@@ -1,6 +1,7 @@
 import { StyleSheet, Text, FlatList,View, StatusBar } from 'react-native'
 import React from 'react'
 import Colors from '../contants/Colors'
+import General  from '../contants/General'
 const Welcome = () => {
   return (
     <View style={[styles.container]}>
@@ -10,7 +11,10 @@ const Welcome = () => {
         translucent
         />
         <View>
-            <FlatList />
+            <FlatList data={General.WELCOME_CONTENTS}
+            keyExtractor={item => item.title}
+            showsHorizontalScrollIndicator={false}
+            />
         </View>
     </View>
   )
