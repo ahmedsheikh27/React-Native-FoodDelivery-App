@@ -3,6 +3,7 @@ import React from 'react'
 import Colors from '../contants/Colors'
 import Images from '../contants/Images'
 import Fonts from '../contants/Fonts'
+import Display from '../utils/Display'
 
 const SplashScreen = () => {
   return (
@@ -31,8 +32,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.DEFAULT_GREEN
     },
     image: {
-        height: 150,
-        width: 150
+        height: Display.setHeight(30),
+        width: Display.setWidth(60)
     },
     title: {
         color: Colors.DEFAULT_WHITE,
