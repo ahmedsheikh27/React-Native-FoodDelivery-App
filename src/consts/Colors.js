@@ -7,5 +7,5 @@ const COLORS = {
     grey: '#908e8c',
   };
   
-  export default COLORS;
+  export  {COLORS};
   

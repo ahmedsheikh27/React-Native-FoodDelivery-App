@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View, Text} from 'react-native';
-import COLORS from '../../consts/colors';
+import { COLORS } from '../../consts/Colors'
 
 const PrimaryButton = ({title, onPress = () => {}}) => {
   return (
@@ -32,4 +32,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default {PrimaryButton, SecondaryButton};
+export {PrimaryButton, SecondaryButton};

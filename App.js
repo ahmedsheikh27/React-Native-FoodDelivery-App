@@ -3,8 +3,9 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import COLORS from './src/consts/Colors';
+import {COLORS} from './src/consts/Colors';
 import OnBoardScreen from './src/views/screens/OnBoardScreen';
+import Home from './src/views/screens/Home'
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ const App = () => {
       <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="BoardScreen" component={OnBoardScreen} />
+        <Stack.Screen name='Home' component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
