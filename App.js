@@ -1,12 +1,10 @@
-import React from 'react'
-import AppNavigator from './src/navigation/AppNavigator'
+import React from 'react';
+import Navigators from './src/navigators';
+import Store from './src/Store';
+import {Provider} from 'react-redux';
 
-const App = () => {
-  return (
-    <>
-      <AppNavigator />
-    </>
-  )
-}
-
-export default App
+export default () => (
+  <Provider store={Store}>
+    <Navigators />
+  </Provider>
+);
