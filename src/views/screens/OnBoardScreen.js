@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import COLORS from '../../consts/Colors';
-import {PrimaryButton} from '../components/Button';
+import COLORS from '../consts/Colors';
+import {PrimaryButton} from '../components/Button'
 
 const OnBoardScreen = ({navigation}) => {
   return (

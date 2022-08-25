@@ -32,4 +32,4 @@ const style = StyleSheet.create({
   },
 });
 
-export {PrimaryButton, SecondaryButton};
+export default {PrimaryButton, SecondaryButton};
